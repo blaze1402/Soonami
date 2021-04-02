@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
      * URL to query the USGS dataset for earthquake information
      */
     private static final String USGS_REQUEST_URL =
-            "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2021-02-01&endtime=2021-04-01&minmagnitude=6";
+            "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&orderby=time&minmag=6&limit=15";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
